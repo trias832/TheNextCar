@@ -1,0 +1,29 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="639" Width="753">
+    <Grid Height="613" VerticalAlignment="Top" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Button Background="Red" x:Name="StartButton" Content="STOPPED" HorizontalAlignment="Left" Margin="83,456,0,0" VerticalAlignment="Top" Click="OnStartButtonClicked" Width="88" Height="20"/>
+        <Button x:Name="AccuButton" Content="ON" HorizontalAlignment="Left" Margin="558,456,0,0" VerticalAlignment="Top" Width="82" Click="OnAccuButtonClicked" RenderTransformOrigin="0.5,0.5" Height="20"/>
+        <Button x:Name="LockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="403,451,0,0" VerticalAlignment="Top" Click="OnLockDoorButtonClicked" Width="88" Height="20" />
+        <Button x:Name="DoorOpenButton" Content="CLOSED" HorizontalAlignment="Left" Margin="242,456,0,0" VerticalAlignment="Top" Click="OnDoorOpenButtonClicked" Width="88" Height="20"/>
+        <Label x:Name="status" Content="Engine Started" HorizontalAlignment="Left" Margin="79,528,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="87"/>
+        <Label x:Name="AccuState" Content="Power is ON" HorizontalAlignment="Left" Margin="558,528,0,0" VerticalAlignment="Top" Foreground="White" Width="88" Height="26"/>
+        <Label x:Name="LockDoorState" Content="Door is Locked" HorizontalAlignment="Left" Margin="393,528,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.156" Foreground="White" Width="160" Height="26"/>
+        <Label x:Name="DoorOpenState" Content="Door is Closed" HorizontalAlignment="Left" Margin="244,528,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.862,0.923" Foreground="White" Height="26" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="386" Margin="60,28,0,0" VerticalAlignment="Top" Width="646" Source="/navigation.jpg"/>
+        <Label Content="x 100 rpm" HorizontalAlignment="Left" Margin="617,297,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="67"/>
+        <Label Content="45" HorizontalAlignment="Left" Margin="617,221,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Height="74" Width="65"/>
+        <Label Content="126" HorizontalAlignment="Left" Margin="78,215,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Height="74" Width="93"/>
+        <Label Content="KM/h" HorizontalAlignment="Left" Margin="108,289,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="42"/>
+
+    </Grid>
+</Window>
